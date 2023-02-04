@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        background-color: black;
+    }
+    .logo img {
+        height: 75px;
+        width: 100px;
+    }
+    .menu nav ul {
+        display: none;
+    }
+
+
+    section.banner {
+        background-image: url("imagens/bg.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        text-transform: uppercase;
+    }
+    .banner-area {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.738);
+    }
+    .banner-itens {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-130px, -50px);
+    }
+    .banner-title h1 {
+        font-size: 30px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .banner-title .orange {
+        color: #B28756;
+    }
+    .banner-title p {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .banner-title div {
+        display: flex;
+        justify-content: center;
+    }
+    .banner-title a {
+        background-color: #B28756;
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 20px;
+    }
+    .banner-title a:hover {
+        
+    }
+    .pointers {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .pointer {
+        height: 14px;
+        width: 14px;
+        border-radius: 8px;
+        border: 1px solid #B28756;
+        margin-left: 10px;
+    }
+}
