@@ -710,6 +710,12 @@
     section.map {
         padding-top: 40px;
         padding-bottom: 40px;
+       
+    }
+    .localizaçao {
+        
+    }
+    .locais {
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -726,4 +732,13 @@
     .local p {
         font-size: 15px;
     }
+    .mapa {
+       background-image: url("imagens/mapa.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100%;
+       height: 300px;
+       
+    }
+    
 }
