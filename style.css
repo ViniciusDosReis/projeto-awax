@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+html, body {
+    overflow-x: hidden;
+}
 
 @media screen and (max-width: 600px) {
     header {
@@ -26,8 +29,37 @@
         height: 75px;
         width: 100px;
     }
+    nav ul li {
+        list-style: none;
+        margin-bottom: 25px;
+    }
+   .menu span {
+    color: #B28756;
+    font-size: 50px;
+    margin-right: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+   }
     .menu nav ul {
+        text-transform: uppercase;
         display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.785);
+        width: 60vw;
+        height: 100vh;
+        top: 100px;
+        right: 0;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+    .menu nav ul a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .menu nav ul a:hover {
+        color: #B28756;
     }
 
 
@@ -100,7 +132,10 @@
         background-color: #B28756;
     }
 
-
+    section.about {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .about-title h1 {
         font-size: 20px;
         text-align: center;
@@ -117,8 +152,6 @@
         margin-bottom: 30px;
     }
     main.about-body p {
-        margin-left: 30px;
-        margin-right: 30px;
         line-height: 25px;
         margin-bottom: 40px;
     }
@@ -142,9 +175,7 @@
        margin-bottom: 50px;
     }
     main.about-body img {
-        height: 280px;
-        width: 430px;
-        margin-left: 30px;
+        width: 100%;
         margin-bottom: 50px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.737);
     }
@@ -184,6 +215,8 @@
 
     section.our-projects {
         padding: 30px;
+        padding-bottom: 50px;
+        text-align: center;
     }
     .our-projects-title {
         margin-bottom: 40px;
@@ -241,26 +274,20 @@
     .our-projects-menu ul li:last-child {
         flex: 2;
     }
-    .our-projects-fotos {
-        width: 100vw;
-        max-width: 1140px;
-    }
     .our-projects-fotoarea {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 250px;
-        width: 420px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        width: 100%;
     }
     .our-projects-fotoarea img {
         width: inherit;
-        height: inherit;
     }
     .our-projects-fotoinfo {
         position: absolute;
-        width: inherit;
+        
         height: inherit;
         display: none;
         flex-direction: column;
@@ -289,9 +316,7 @@
         font-size: 11px;
         font-weight: 600;
         text-transform: uppercase;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: -50px;
+        display: inline;
     }
 
 
@@ -712,9 +737,6 @@
         padding-top: 40px;
         padding-bottom: 40px;
        
-    }
-    .localizaçao {
-        
     }
     .locais {
         padding-left: 25px;
