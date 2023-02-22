@@ -882,12 +882,9 @@ html, body {
         text-transform: uppercase;
         padding: 15px;
         font-size: 13px;
-        border-bottom: 1px solid black;
     }
     .menu nav ul a:hover {
-        border-bottom: 4px solid #B28756;
         color: #B28756;
-        padding-bottom: 62px;
         
     }
 
@@ -902,27 +899,27 @@ html, body {
     .banner-area {
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.738);
-    }
-    .banner-itens {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-130px, -50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .banner-title h1 {
-        font-size: 30px;
+        font-size: 50px;
         color: white;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .banner-title .orange {
         color: #B28756;
     }
     .banner-title p {
-        text-align: center;
         color: white;
         font-size: 18px;
         font-weight: 600;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    .banner-title p br {
+        display: none;
     }
     .banner-title div {
         display: flex;
@@ -962,27 +959,42 @@ html, body {
     }
 
     section.about {
-        padding-left: 30px;
-        padding-right: 30px;
+        background-color: rgb(221, 221, 221);
+        padding-top: 40px;
+    }
+    div.about-area {
+        margin: auto;
+        max-width: 1140px;
+    }
+    .about-title {
+        margin-bottom: 40px;
     }
     .about-title h1 {
         font-size: 20px;
         text-align: center;
-        margin-top: 40px;
         text-transform: uppercase;
     }
     .about-title p {
         text-align: center;
         margin-top: 10px;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 600;
         color: gray;
         text-transform: uppercase;
         margin-bottom: 30px;
     }
+    .about-conteudo {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+    main.about-body {
+        display: flex;
+    }
     main.about-body p {
         line-height: 25px;
         margin-bottom: 40px;
+        text-align: justify;
     }
     main.about-body a {
         background-color: #B28756;
@@ -1000,11 +1012,11 @@ html, body {
         background-color: #ad9880;
     }
     main.about-body div {
-       text-align: center;
+       text-align: left;
        margin-bottom: 50px;
     }
     main.about-body img {
-        width: 100%;
+        width: 500px;
         margin-bottom: 50px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.737);
     }
@@ -1015,7 +1027,7 @@ html, body {
         color: white;
         text-align: center;
         padding-top: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
     section.services h1, .services-items h1 {
         text-transform: uppercase;
@@ -1031,14 +1043,32 @@ html, body {
         color: rgb(177, 176, 176);
         font-weight: 600;
     }
+    .services-items {
+        display: flex;
+        justify-content: center;
+        max-width: 1140px;
+        margin: auto;
+    }
+    .services-item {
+        border-right: 1px solid rgb(59, 59, 59);
+        flex: 1;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .services-item:first-child {
+        border-left: 1px solid rgb(59, 59, 59);
+    }
+    .services-item h1 br, .services-item p br {
+        display: none;
+    }
     .services-item p {
-        margin-bottom: 50px;
+        
         font-size: 11px;
         color: gray;
         line-height: 20px;
     }
     .services-item img {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
 
@@ -1066,8 +1096,10 @@ html, body {
     }
     .our-projects-menu {
         border: 1px solid gray;
-        border-radius: 15px;
-        margin-bottom: 20px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        max-width: 545px;
+        margin: auto;
     }
     .our-projects-menu ul {
         list-style: none;
@@ -1077,10 +1109,11 @@ html, body {
         border-radius: 15px;
     }
     .our-projects-menu ul li {
-        padding: 15px;
+        padding: 10px;
         text-transform: uppercase;
         border-right: 1px solid gray;
         font-size: 13px;
+        flex: 1;
     }
     .our-projects-menu ul li:hover {
         border-bottom: 4px solid #B28756;
@@ -1094,29 +1127,30 @@ html, body {
     .our-projects-menu ul li:nth-child(3) {
         flex: 2;
     }
-    .our-projects-menu ul li:nth-child(4) {
-        border-right: none;
-    }
     .our-projects-menu ul li:nth-child(5) {
         flex: 2;
     }
-    .our-projects-menu ul li:last-child {
-        flex: 2;
+    .our-projects-fotos {
+        padding-top: 20px;
+        max-width: 1140px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
     }
     .our-projects-fotoarea {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         margin-bottom: 15px;
-        width: 100%;
+        flex: 1;
+        width: 265px;
+        height: 160px;
+        margin: 10px;
     }
     .our-projects-fotoarea img {
         width: inherit;
     }
     .our-projects-fotoinfo {
         position: absolute;
-        
+        width: inherit;
         height: inherit;
         display: none;
         flex-direction: column;
@@ -1128,6 +1162,10 @@ html, body {
     .our-projects-fotoinfo h1 {
         margin-bottom: 15px;
         font-weight: 600;
+        font-size: 20px;
+    }
+    .our-projects-fotoinfo p {
+        font-size: 12px
     }
     .our-projects-fotoarea:hover .our-projects-fotoinfo{
         display: flex;
